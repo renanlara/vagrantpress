@@ -44,6 +44,13 @@ The procedure for starting up a working WordPress is as follows:
 2. Run the command `vagrant up` from the directory
 3. Open your browser to http://vagrantpress.dev
 
+## My Preferences
+
+I redirected on apache the directory of /wordpress/to/name-of-folder-of-my-preference/ with the purpose of add all my projects over there
+```html
+In vagrant ssh: sudo nano /etc/apache2/sites-available/default.conf
+```
+
 ## Working with the environment
 
 To log in to the local Wordpress installation:
