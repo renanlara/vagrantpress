@@ -19,6 +19,12 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "vagrantpress.dev"
   config.vm.network :private_network, :ip => "192.168.50.4"
 
+  # Share an additional folder to the guest VM. The first argument is
+  # the path on the host to the actual folder. The second argument is
+  # the path on the guest to mount the folder. And the optional third
+  # argument is a set of non-required options.
+  config.vm.synced_folder "B:/vagrantpress/repositories", "/var/www/html"
+
   # add virtual hostname to /etc/hosts
   if Vagrant.has_plugin?('HostsUpdater')
     config.hostsupdater.aliases = %w{www.vagrantpress.dev}
