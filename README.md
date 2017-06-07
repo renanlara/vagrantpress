@@ -46,7 +46,7 @@ The procedure for starting up a working WordPress is as follows:
 
 ## My Preferences
 
-I redirected on apache the directory of /wordpress/to/name-of-folder-of-my-preference/ with the purpose of add all my projects over there
+I redirected on apache the directory of `/wordpress/` to `/name-of-folder-of-my-preference/` with the purpose of add all my projects over there
 ```html
 In vagrant ssh: sudo nano /etc/apache2/sites-available/default.conf
 ```
